@@ -1,3 +1,1 @@
-files:
-  - source: /content/posts/*.md
-    translation: /content/posts/%two_letters_code%_%original_file_name%
+files: []
