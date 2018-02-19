@@ -1,8 +1,8 @@
 ---
-title: "My New Post"
+title: "Mój nowy post"
 date: 2018-02-19T10:50:10+01:00
 draft: true
 ---
-## This is the title if this page
+## To jest tytuł strony
 
-some content
+jakaś tam treść
