@@ -3,11 +3,22 @@
 <head>
     <meta charset="utf-8">
     <title>{{ block "title" . }}
-        <!-- Blocks may include default content. -->
-        {{ .Site.Title }}
-        {{ end }}</title>
+        {{ .Site.Language.Title }}
+        {{ end }}
+    </title>
 </head>
 <body>
+{{ if .IsTranslated }}
+<h4>{{ i18n "translations" }}</h4>
+<ul>
+    {{ range .Translations }}
+    <li>
+        <a href="{{ .Permalink }}">{{ .Lang }}: {{ .Title }}{{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
+    </li>
+    {{ end}}
+</ul>
+{{ end }}
+
 <!-- Code that all your templates share, like a header -->
 {{ block "main" . }}
 <!-- The part of the page that begins to differ between templates -->

@@ -1,13 +1,17 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-DefaultContentLanguage = "en"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+debug = true
 
 
 [languages]
-[languages.en]
-title = "My New Hugo Site"
-weight = 1
+    [languages.en]
+        languageName = "English"
+        title = "My New Hugo Site"
+        weight = 1
 
-[languages.pl]
-title = "Moja strona w Hugo"
-weight = 2
+    [languages.pl]
+        languageName = "Polski"
+        title = "Moja strona w Hugo"
+        weight = 2
