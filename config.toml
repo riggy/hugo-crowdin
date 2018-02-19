@@ -1,3 +1,13 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
+DefaultContentLanguage = "en"
+
+
+[languages]
+[languages.en]
 title = "My New Hugo Site"
+weight = 1
+
+[languages.pl]
+title = "Moja strona w Hugo"
+weight = 2
